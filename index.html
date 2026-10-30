@@ -4,142 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="sidebar">
-        <div id="logo">
-            <img src="./images/view-dashboard.svg">
-            <p>Dashboard</p>
+    <div id="container">
+        <div id="sidebar">
+            <div id="logo">
+                <img src="./images/view-dashboard.svg">
+                <p>Dashboard</p>
+            </div>
+            <div id="nav">
+                <div id="home">
+                    <img src="./images/home-account.svg">
+                    <p>Home</p>
+                </div>
+                <div id="profile">
+                    <img src="./images/card-account-details.svg">
+                    <p>Profile</p>
+                </div>
+                <div id="messages">
+                    <img src="./images/message.svg">
+                    <p>Messages</p>
+                </div>
+                <div id="history">
+                    <img src="./images/history.svg">
+                    <p>History</p>
+                </div>
+                <div id="tasks">
+                    <img src="./images/file-document-multiple.svg">
+                    <p>Tasks</p>
+                </div>
+                <div id="communities">
+                    <img src="./images/account-group.svg">
+                    <p>Communities</p>
+                </div>
+                <div id="settings">
+                    <img src="./images/cog.svg">
+                    <p>Settings</p>
+                </div>
+                <div id="support ">
+                    <img src="./images/help-box.svg">
+                    <p>Support</p>
+                </div>
+                <div id="privacy">
+                    <img src="./images/shield-check.svg">
+                    <p>Privacy</p>
+                </div>
+            </div>
         </div>
-        <div id="nav">
-            <div id="home">
-                <img src="./images/home-account.svg">
-                <p>Home</p>
+        <div id="header">
+            <div id="search-bar">
+                <form action="./search" method="get">
+                    <button type="submit" aria-label="Search">
+                        <img src="./images/magnify.svg" alt="">
+                    </button>
+                    <input type="search">
+                </form>
             </div>
-            <div id="profile">
-                <img src="./images/card-account-details.svg">
-                <p>Profile</p>
+            <div id="user-info">
+                <img id="notification" src="./images/bell.svg">
+                <img class="avatar" src="./images/fotor-3d-avatar.webp">
+                <span><strong>Morgan Oakley</strong></span>
             </div>
-            <div id="messages">
-                <img src="./images/message.svg">
-                <p>Messages</p>
-            </div>
-            <div id="history">
-                <img src="./images/history.svg">
-                <p>History</p>
-            </div>
-            <div id="tasks">
-                <img src="./images/file-document-multiple.svg">
-                <p>Tasks</p>
-            </div>
-            <div id="communities">
-                <img src="./images/account-group.svg">
-                <p>Communities</p>
-            </div>
-            <div id="settings">
-                <img src="./images/cog.svg">
-                <p>Settings</p>
-            </div>
-            <div id="support ">
-                <img src="./images/help-box.svg">
-                <p>Support</p>
-            </div>
-            <div id="privacy">
-                <img src="./images/shield-check.svg">
-                <p>Privacy</p>
-            </div>
-        </div>
-    </div>
-    <div id="header">
-        <div id="search-bar"></div>
-        <div id="user-info">
-            <img id="notification">
-            <img class="avatar">
-            <p>Morgan Oakley</p>
-        </div>
-        <div>
             <div id="greet">
-                <img class="avatar">
-                <p>Hi there,</p>
-                <p>Morgan Oakley (@morgan)</p>
+                <img class="avatar" src="./images/fotor-3d-avatar.webp">
+                <div>
+                    <div><strong>Hi there,</strong></div>
+                    <div><strong>Morgan Oakley (@morgan)</strong></div>
+                </div>
             </div>
             <div id="action">
-                <a id="new">New</a>
-                <a id="upload">Upload</a>
-                <a id="share">Share</a>
+                <a id="new" href="./new">New</a>
+                <a id="upload" href="./upload">Upload</a>
+                <a id="share" href="./share">Share</a>
             </div>
         </div>
-    </div>
-    <div id="main-content">
-        <div id="project">
-            <p>Your projects</p>
-            <div class="content-box">
-                <p>Super Cool Project</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
-            </div>
-            <div class="content-box">
-                <p>Less Cool Project</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
-            </div>
-            <div class="content-box">
-                <p>Impossible App</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
-            </div>
-            <div class="content-box">
-                <p>Easy Peasy App</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
-            </div>
-            <div class="content-box">
-                <p>Ad Blocker</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
-            </div>
-            <div class="content-box">
-                <p>Money Maker</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
-            </div>
-        </div>
-        <div id="announcement">
-            <p>Announcements</p>
-            <div class="news-box">
-                <p>Site maintance</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
-            </div>
-             <div class="news-box">
-                <p>Community Share Day</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
-            </div>
-             <div class="news-box">
-                <p>Updated Privacy Policy</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
-            </div>
-        </div>
-        <div id="trending">
-            <div id="trend">
-                <img class="trend-avatar">
-                <div class="info">
-                    <p>@tegan</p>
-                    <p>World Peace Builder</p>
+        <div id="main-content">
+            <div id="project">
+                <p>Your projects</p>
+                <div id="big-content">
+                    <div class="content-box">
+                        <p>Super Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
+                    </div>
+                    <div class="content-box">
+                        <p>Less Cool Project</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
+                    </div>
+                    <div class="content-box">
+                        <p>Impossible App</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
+                    </div>
+                    <div class="content-box">
+                        <p>Easy Peasy App</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
+                    </div>
+                    <div class="content-box">
+                        <p>Ad Blocker</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
+                    </div>
+                    <div class="content-box">
+                        <p>Money Maker</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
+                    </div>
                 </div>
             </div>
-            <div id="trend">
-                <img class="trend-avatar">
-                <div class="info">
-                    <p>@morgan</p>
-                    <p>Super Cool Project</p>
+            <div id="announcement">
+                <p>Announcements</p>
+                <div>
+                    <div class="news-box">
+                        <p>Site maintance</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
+                    </div>
+                    <div class="news-box">
+                        <p>Community Share Day</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
+                    </div>
+                    <div class="news-box">
+                        <p>Updated Privacy Policy</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem numquam sit consectetur eveniet nisi minus laudantium non aspernatur?</p>
+                    </div>
                 </div>
             </div>
-            <div id="trend">
-                <img class="trend-avatar">
-                <div class="info">
-                    <p>@kendall</p>
-                    <p>Life Changing App</p>
-                </div>
-            </div>
-            <div id="trend">
-                <img class="trend-avatar">
-                <div class="info">
-                    <p>@alex</p>
-                    <p>No Traffic Maker</p>
+            <div id="trending">
+                <p>Trending</p>
+                <div>
+                    <div class="trend">
+                        <img class="avatar" src="./images/fotor-3d-avatar.webp">
+                        <div class="info">
+                            <p>@tegan</p>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <img class="avatar" src="./images/fotor-3d-avatar.webp">
+                        <div class="info">
+                            <p>@morgan</p>
+                            <p>Super Cool Project</p>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <img class="avatar" src="./images/fotor-3d-avatar.webp">
+                        <div class="info">
+                            <p>@kendall</p>
+                            <p>Life Changing App</p>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <img class="avatar" src="./images/fotor-3d-avatar.webp">
+                        <div class="info">
+                            <p>@alex</p>
+                            <p>No Traffic Maker</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
